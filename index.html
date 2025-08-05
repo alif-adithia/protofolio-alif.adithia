@@ -1,0 +1,2684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alif Adithia - Professional Portfolio | Graphic Designer • Photographer • IT Support</title>
+    <meta name="description" content="Professional portfolio of Alif Adithia - Expert in Graphic Design, Photography, and IT Support with 3+ years experience">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Dark mode styles */
+        .dark {
+            color-scheme: dark;
+        }
+        
+        .dark body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        /* Theme toggle button in dark mode */
+        .dark #theme-toggle {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b) !important;
+        }
+        
+        .dark #theme-toggle:hover {
+            background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+        }
+        
+        /* Background Colors */
+        .dark .bg-white {
+            background-color: #1e293b !important;
+        }
+        
+        .dark .bg-gray-50 {
+            background-color: #0f172a !important;
+        }
+        
+        .dark .bg-gray-100 {
+            background-color: #334155 !important;
+        }
+        
+        .dark .bg-gray-900 {
+            background-color: #020617 !important;
+        }
+        
+        .dark .bg-blue-50 {
+            background-color: rgba(59, 130, 246, 0.1) !important;
+        }
+        
+        .dark .bg-purple-50 {
+            background-color: rgba(147, 51, 234, 0.1) !important;
+        }
+        
+        .dark .bg-green-50 {
+            background-color: rgba(34, 197, 94, 0.1) !important;
+        }
+        
+        .dark .bg-yellow-50 {
+            background-color: rgba(234, 179, 8, 0.1) !important;
+        }
+        
+        .dark .bg-red-50 {
+            background-color: rgba(239, 68, 68, 0.1) !important;
+        }
+        
+        .dark .bg-orange-50 {
+            background-color: rgba(249, 115, 22, 0.1) !important;
+        }
+        
+        .dark .bg-pink-50 {
+            background-color: rgba(236, 72, 153, 0.1) !important;
+        }
+        
+        .dark .bg-indigo-50 {
+            background-color: rgba(99, 102, 241, 0.1) !important;
+        }
+        
+        .dark .bg-cyan-50 {
+            background-color: rgba(6, 182, 212, 0.1) !important;
+        }
+        
+        .dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.1) !important;
+        }
+        
+        .dark .bg-violet-50 {
+            background-color: rgba(139, 92, 246, 0.1) !important;
+        }
+        
+        .dark .bg-amber-50 {
+            background-color: rgba(245, 158, 11, 0.1) !important;
+        }
+        
+        /* Text Colors */
+        .dark .text-gray-800 {
+            color: #e2e8f0 !important;
+        }
+        
+        .dark .text-gray-700 {
+            color: #cbd5e1 !important;
+        }
+        
+        .dark .text-gray-600 {
+            color: #94a3b8 !important;
+        }
+        
+        .dark .text-gray-500 {
+            color: #64748b !important;
+        }
+        
+        .dark .text-gray-400 {
+            color: #475569 !important;
+        }
+        
+        .dark .text-gray-300 {
+            color: #cbd5e1 !important;
+        }
+        
+        .dark .text-white {
+            color: #f8fafc !important;
+        }
+        
+        /* Border Colors */
+        .dark .border-gray-200 {
+            border-color: #475569 !important;
+        }
+        
+        .dark .border-gray-100 {
+            border-color: #334155 !important;
+        }
+        
+        .dark .border-gray-800 {
+            border-color: #475569 !important;
+        }
+        
+        .dark .border-t {
+            border-color: #475569 !important;
+        }
+        
+        .dark .border-b {
+            border-color: #475569 !important;
+        }
+        
+        .dark .border-l-4 {
+            border-left-color: inherit !important;
+        }
+        
+        /* Shadows and Effects */
+        .dark .professional-shadow {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
+        }
+        
+        .dark .card-hover:hover {
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5) !important;
+        }
+        
+        /* Navigation */
+        .dark nav {
+            background-color: rgba(30, 41, 59, 0.95) !important;
+            backdrop-filter: blur(12px);
+        }
+        
+        .dark #mobile-menu {
+            background-color: #1e293b !important;
+        }
+        
+        /* Hover States */
+        .dark .hover\\:bg-gray-100:hover {
+            background-color: #334155 !important;
+        }
+        
+        .dark .hover\\:bg-blue-50:hover {
+            background-color: rgba(59, 130, 246, 0.15) !important;
+        }
+        
+        .dark .hover\\:bg-gray-200:hover {
+            background-color: #475569 !important;
+        }
+        
+        .dark .hover\\:text-blue-600:hover {
+            color: #60a5fa !important;
+        }
+        
+        .dark .hover\\:text-white:hover {
+            color: #f8fafc !important;
+        }
+        
+        /* Form Elements */
+        .dark input, .dark select, .dark textarea {
+            background-color: #334155 !important;
+            border-color: #475569 !important;
+            color: #e2e8f0 !important;
+        }
+        
+        .dark input::placeholder, .dark textarea::placeholder {
+            color: #94a3b8 !important;
+        }
+        
+        .dark .focus\\:ring-2:focus {
+            ring-color: #3b82f6 !important;
+        }
+        
+        /* Testimonial Cards */
+        .dark .testimonial-card {
+            background-color: #1e293b !important;
+            border: 1px solid #334155 !important;
+        }
+        
+        .dark .testimonial-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4) !important;
+        }
+        
+        /* Scrollbar for testimonials */
+        .dark .testimonials-track::-webkit-scrollbar-track {
+            background: #334155;
+        }
+        
+        .dark .testimonials-track::-webkit-scrollbar-thumb {
+            background: #64748b;
+        }
+        
+        .dark .testimonials-track::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Footer */
+        .dark footer {
+            background-color: #020617 !important;
+        }
+        
+        /* Gradient Backgrounds in Dark Mode */
+        .dark .bg-gradient-to-br {
+            opacity: 0.9;
+        }
+        
+        /* Portfolio Filter Buttons */
+        .dark .filter-btn {
+            background-color: #334155 !important;
+            color: #cbd5e1 !important;
+        }
+        
+        .dark .filter-btn.active {
+            background-color: #3b82f6 !important;
+            color: #ffffff !important;
+        }
+        
+        .dark .filter-btn:not(.active):hover {
+            background-color: #475569 !important;
+        }
+        
+        /* Achievement Cards */
+        .dark .achievement-counter {
+            color: inherit !important;
+        }
+        
+        /* Modal */
+        .dark #projectModal .bg-white {
+            background-color: #1e293b !important;
+        }
+        
+        .dark #projectModal {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+        }
+        
+        /* Special gradient text in dark mode */
+        .dark .text-gradient {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Contact form specific styling */
+        .dark .bg-gray-50.rounded-3xl {
+            background-color: #1e293b !important;
+            border: 1px solid #334155;
+        }
+        
+        /* Skills progress bars background in dark mode */
+        .dark .bg-gray-200 {
+            background-color: #475569 !important;
+        }
+        
+        /* Skill bars gradients must work in dark mode */
+        .dark .skill-bar.bg-gradient-to-r.from-green-500.to-green-600 {
+            background: linear-gradient(to right, #22c55e, #16a34a) !important;
+        }
+        
+        .dark .skill-bar.bg-gradient-to-r.from-blue-500.to-blue-600 {
+            background: linear-gradient(to right, #3b82f6, #2563eb) !important;
+        }
+        
+        .dark .skill-bar.bg-gradient-to-r.from-purple-500.to-purple-600 {
+            background: linear-gradient(to right, #a855f7, #9333ea) !important;
+        }
+        
+        .dark .skill-bar.bg-gradient-to-r.from-orange-500.to-orange-600 {
+            background: linear-gradient(to right, #f97316, #ea580c) !important;
+        }
+        
+        /* Social media icons in footer */
+        .dark .bg-gray-800 {
+            background-color: #334155 !important;
+        }
+        
+        .dark .bg-gray-800:hover {
+            background-color: #475569 !important;
+        }
+        
+        /* Experience timeline */
+        .dark .border-l-2 {
+            border-color: #475569 !important;
+        }
+        
+        /* Achievement badges */
+        .dark .bg-yellow-100 {
+            background-color: rgba(234, 179, 8, 0.2) !important;
+        }
+        
+        .dark .text-yellow-700 {
+            color: #fbbf24 !important;
+        }
+        
+        .dark .bg-blue-100 {
+            background-color: rgba(59, 130, 246, 0.2) !important;
+        }
+        
+        .dark .text-blue-600 {
+            color: #60a5fa !important;
+        }
+        
+        .dark .bg-purple-100 {
+            background-color: rgba(147, 51, 234, 0.2) !important;
+        }
+        
+        .dark .text-purple-600 {
+            color: #a78bfa !important;
+        }
+        
+        .dark .bg-green-100 {
+            background-color: rgba(34, 197, 94, 0.2) !important;
+        }
+        
+        .dark .text-green-600 {
+            color: #4ade80 !important;
+        }
+        
+        .dark .bg-red-100 {
+            background-color: rgba(239, 68, 68, 0.2) !important;
+        }
+        
+        .dark .text-red-600 {
+            color: #f87171 !important;
+        }
+        
+        .dark .bg-orange-100 {
+            background-color: rgba(249, 115, 22, 0.2) !important;
+        }
+        
+        .dark .text-orange-600 {
+            color: #fb923c !important;
+        }
+        
+        /* Professional Excellence section */
+        .dark .bg-gradient-to-br {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2)) !important;
+        }
+        
+        /* Quick Response Guarantee section */
+        .dark .bg-gradient-to-r {
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0.15), rgba(147, 51, 234, 0.15)) !important;
+        }
+        
+        /* Specific gradient backgrounds in dark mode */
+        .dark .from-blue-50.to-purple-50 {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(147, 51, 234, 0.1)) !important;
+        }
+        
+        .dark .from-blue-50.to-purple-50 h4,
+        .dark .from-blue-50.to-purple-50 h3 {
+            color: #e2e8f0 !important;
+        }
+        
+        .dark .from-blue-50.to-purple-50 p {
+            color: #cbd5e1 !important;
+        }
+        
+        /* Ensure all transitions work smoothly */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .gradient-bg { 
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%); 
+        }
+        
+        .card-hover { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        .card-hover:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15); 
+        }
+        
+        .skill-bar { 
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        .fade-in { 
+            opacity: 0; 
+            transform: translateY(30px); 
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        .fade-in.visible { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+        
+        .professional-shadow { 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1); 
+        }
+        
+        .text-gradient { 
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text;
+        }
+        
+        .achievement-counter { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 800; 
+        }
+        
+        /* Responsive Typography */
+        @media (max-width: 640px) {
+            .text-7xl { font-size: 3rem; }
+            .text-6xl { font-size: 2.5rem; }
+            .text-5xl { font-size: 2rem; }
+            .text-4xl { font-size: 1.875rem; }
+            .text-3xl { font-size: 1.5rem; }
+            .text-2xl { font-size: 1.25rem; }
+            .text-xl { font-size: 1.125rem; }
+            
+            /* Better mobile spacing */
+            .py-20 { padding-top: 4rem; padding-bottom: 4rem; }
+            .py-16 { padding-top: 3rem; padding-bottom: 3rem; }
+            .py-12 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+            .px-8 { padding-left: 1.5rem; padding-right: 1.5rem; }
+            .px-6 { padding-left: 1rem; padding-right: 1rem; }
+            .px-4 { padding-left: 0.75rem; padding-right: 0.75rem; }
+            
+            /* Mobile grid improvements */
+            .gap-8 { gap: 1.5rem; }
+            .gap-6 { gap: 1rem; }
+            .gap-4 { gap: 0.75rem; }
+        }
+        
+        /* Testimonials Manual Scroll */
+        .testimonials-track {
+            will-change: transform;
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f1f5f9;
+        }
+        
+        .testimonials-track::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .testimonials-track::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        
+        .testimonials-track::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        
+        .testimonials-track::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            min-width: 280px;
+            flex-shrink: 0;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        @media (max-width: 640px) {
+            .testimonial-card {
+                min-width: 260px;
+                height: auto;
+                min-height: 280px;
+            }
+        }
+        
+        /* Mobile Navigation */
+        #mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            z-index: 60;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        
+        #mobile-menu.open {
+            transform: translateY(0);
+        }
+        
+        /* Ensure mobile menu is above everything */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 50;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Menu icon animation */
+        .menu-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-icon.rotate {
+            transform: rotate(180deg);
+        }
+        
+        /* Responsive Grid Adjustments */
+        @media (max-width: 768px) {
+            .grid-cols-2 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+            .lg\\:grid-cols-3 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+            .lg\\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .lg\\:grid-cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .lg\\:grid-cols-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        
+        /* Image Responsiveness */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Container Padding Adjustments */
+        @media (max-width: 640px) {
+            .px-4 { padding-left: 1rem; padding-right: 1rem; }
+            .py-20 { padding-top: 3rem; padding-bottom: 3rem; }
+            .py-16 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+        }
+        
+        /* Button Responsiveness */
+        @media (max-width: 640px) {
+            .flex-col.sm\\:flex-row { flex-direction: column; }
+            .gap-4 { gap: 0.75rem; }
+        }
+        
+        /* Modal Responsiveness */
+        @media (max-width: 640px) {
+            .max-w-4xl { max-width: 95vw; }
+            .p-8 { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 professional-shadow">
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+            <div class="flex justify-between items-center py-2 sm:py-3 lg:py-4">
+                <div class="flex items-center">
+                    <img src="https://alif-adithia.github.io/protofolio-alif.adithia/Logo_Alif.png" alt="Alif Adithia Logo" class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 rounded-lg mr-2 sm:mr-3 object-cover">
+                    <div>
+                        <div class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800">Alif Adithia</div>
+                        <div class="text-xs text-gray-500 hidden md:block">Professional Portfolio</div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex space-x-6 xl:space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Experience</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Portfolio</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors font-medium text-sm xl:text-base">Contact</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" onclick="toggleTheme()" class="p-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <i id="theme-icon" class="fas fa-moon text-white text-lg"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Toggle (Hidden on Desktop) -->
+                    <div class="lg:hidden">
+                        <button id="menu-toggle" onclick="toggleMenu()" class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors relative z-50">
+                            <i id="menu-icon" class="fas fa-bars text-gray-600 dark:text-gray-300 text-xl menu-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay lg:hidden" onclick="closeMenu()"></div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden">
+            <div class="px-4 py-6 space-y-1 pt-20">
+                <a href="#home" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-home mr-3 text-blue-600"></i>Home
+                </a>
+                <a href="#about" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-user mr-3 text-blue-600"></i>About
+                </a>
+                <a href="#experience" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-briefcase mr-3 text-blue-600"></i>Experience
+                </a>
+                <a href="#services" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-cogs mr-3 text-blue-600"></i>Services
+                </a>
+                <a href="#portfolio" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-folder mr-3 text-blue-600"></i>Portfolio
+                </a>
+                <a href="#testimonials" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg border-b border-gray-100">
+                    <i class="fas fa-star mr-3 text-blue-600"></i>Testimonials
+                </a>
+                <a href="#contact" class="mobile-nav-link block py-4 px-4 text-gray-700 font-medium hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 text-lg">
+                    <i class="fas fa-envelope mr-3 text-blue-600"></i>Contact
+                </a>
+                
+                <!-- Mobile Menu Footer -->
+                <div class="pt-6 mt-6 border-t border-gray-200 dark:border-gray-600">
+                    <!-- Theme Toggle in Mobile Menu -->
+                    <div class="flex justify-center mb-4">
+                        <button onclick="toggleTheme()" class="flex items-center space-x-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <i id="mobile-theme-icon" class="fas fa-moon text-white text-lg"></i>
+                            <span class="text-white font-semibold">Toggle Theme</span>
+                        </button>
+                    </div>
+                    
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <a href="mailto:alifadithia14@gmail.com" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                            <i class="fas fa-envelope text-blue-600"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/alif-adithia" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors">
+                            <i class="fab fa-linkedin text-blue-600"></i>
+                        </a>
+                        <a href="https://wa.me/6285830051389" class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center hover:bg-green-200 transition-colors">
+                            <i class="fab fa-whatsapp text-green-600"></i>
+                        </a>
+                    </div>
+                    <div class="text-center text-sm text-gray-500 pb-4">
+                        Available for freelance work
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center relative overflow-hidden" style="padding-top: 100px;">
+        <style>
+            @media (min-width: 640px) {
+                #home { padding-top: 112px !important; }
+            }
+            @media (min-width: 768px) {
+                #home { padding-top: 128px !important; }
+            }
+            @media (min-width: 1024px) {
+                #home { padding-top: 144px !important; }
+            }
+        </style>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="text-white fade-in order-2 lg:order-1 text-center lg:text-left">
+                    <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-sm">
+                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+                        <span class="font-medium">Available for Work</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Alif <span class="text-gradient block sm:inline">Adithia</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl lg:text-3xl mb-4 text-white/90 font-medium">
+                        Creative Professional & Technical Expert
+                    </p>
+                    <p class="text-base sm:text-lg mb-8 text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        Specializing in Graphic Design, Photography, and IT Support with 3+ years of proven experience 
+                        delivering exceptional results for diverse clients and organizations.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8 max-w-md mx-auto lg:mx-0">
+                        <a href="#portfolio" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                            View My Work
+                        </a>
+                        <a href="https://drive.google.com/file/d/1csi5CGhLrvOcfpMgE8lLeOPKTTrIeTRn/view?usp=sharing" target="_blank" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center">
+                            <i class="fas fa-download mr-2"></i><span>Download CV</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start space-x-6">
+                        <a href="mailto:alifadithia14@gmail.com" class="text-white/80 hover:text-white transition-colors p-2" title="Email: alifadithia14@gmail.com">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/alif-adithia" class="text-white/80 hover:text-white transition-colors p-2" title="LinkedIn: ALIF ADITHIA">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/alif_adithia38" class="text-white/80 hover:text-white transition-colors p-2" title="Instagram: @alif_adithia38">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/6285830051389" class="text-white/80 hover:text-white transition-colors p-2" title="WhatsApp: 085830051389">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="fade-in order-1 lg:order-2 flex justify-center mb-8 lg:mb-0">
+                    <div class="relative">
+                        <div class="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-white/10 backdrop-blur-sm rounded-3xl flex items-center justify-center p-4">
+                            <img src="https://alif-adithia.github.io/protofolio-alif.adithia/Alif_Adithia.jpg" alt="Alif Adithia Professional Photo" class="w-full h-full object-cover rounded-2xl shadow-2xl">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white rounded-xl p-4 professional-shadow">
+                            <div class="text-center">
+                                <div class="text-xl font-bold text-gray-800">3+</div>
+                                <div class="text-sm text-gray-600">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 bg-white rounded-xl p-4 professional-shadow">
+                            <div class="text-center">
+                                <div class="text-xl font-bold text-gray-800">107+</div>
+                                <div class="text-sm text-gray-600">Projects Done</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 fade-in">
+                <div class="text-center p-6 bg-gray-50 rounded-2xl">
+                    <div class="achievement-counter text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600 mb-2" data-target="107">0</div>
+                    <div class="text-gray-600 font-medium text-sm sm:text-base">Projects Completed</div>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-2xl">
+                    <div class="achievement-counter text-3xl sm:text-4xl md:text-5xl font-bold text-purple-600 mb-2" data-target="70">0</div>
+                    <div class="text-gray-600 font-medium text-sm sm:text-base">Happy Clients</div>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-2xl">
+                    <div class="achievement-counter text-3xl sm:text-4xl md:text-5xl font-bold text-green-600 mb-2" data-target="3">0</div>
+                    <div class="text-gray-600 font-medium text-sm sm:text-base">Years Experience</div>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-2xl">
+                    <div class="achievement-counter text-3xl sm:text-4xl md:text-5xl font-bold text-orange-600 mb-2" data-target="7">0</div>
+                    <div class="text-gray-600 font-medium text-sm sm:text-base">Awards Won</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">About Me</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+                    A dedicated creative professional with a strong technical background, committed to delivering 
+                    exceptional results that exceed client expectations and drive business success.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+                <div class="fade-in">
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 h-96 flex items-center justify-center professional-shadow">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-briefcase text-4xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Professional Excellence</h3>
+                            <p class="text-gray-600">Committed to delivering high-quality work</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Professional Summary</h3>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Digital Administration</h4>
+                                <p class="text-gray-600">Document management, archiving, and data processing with organized and efficient systems.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">IT Support</h4>
+                                <p class="text-gray-600">Troubleshooting, software and hardware installation, and basic network configuration.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Photography</h4>
+                                <p class="text-gray-600">Professional photography, editing, and photo processing for various commercial and personal needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Graphic Design</h4>
+                                <p class="text-gray-600">Proficient in Adobe Photoshop and Canva for various visual design needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Communication</h4>
+                                <p class="text-gray-600">Excellent teamwork and communication skills with both team members and clients.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-pink-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-1">Social Media Management</h4>
+                                <p class="text-gray-600">Content creation, post scheduling, and engagement improvement across various platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Progress -->
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-semibold text-gray-700">IT Support</span>
+                                <span class="text-green-600 font-semibold">75%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full" style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-semibold text-gray-700">Graphic Design & Branding</span>
+                                <span class="text-blue-600 font-semibold">67%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 0%" data-width="67%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-semibold text-gray-700">Photography & Videography</span>
+                                <span class="text-purple-600 font-semibold">42%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-purple-600 h-3 rounded-full" style="width: 0%" data-width="42%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="font-semibold text-gray-700">Project Management</span>
+                                <span class="text-orange-600 font-semibold">40%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-orange-500 to-orange-600 h-3 rounded-full" style="width: 0%" data-width="40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Experience & Education</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A comprehensive background in creative and technical fields with continuous professional development
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Experience -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 flex items-center">
+                        <i class="fas fa-briefcase text-blue-600 mr-3"></i>
+                        Professional Experience
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                            <div class="bg-white rounded-xl p-6 professional-shadow">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h4 class="text-lg font-bold text-gray-800">Freelance Photographer</h4>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2023 - Present</span>
+                                </div>
+                                <p class="text-blue-600 font-semibold mb-3">Independent Contractor</p>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• Document activities, products, and private events</li>
+                                    <li>• Edit photos and deliver high-quality results to clients</li>
+                                    <li>• Apply professional photography techniques for various needs</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-purple-600 rounded-full"></div>
+                            <div class="bg-white rounded-xl p-6 professional-shadow">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h4 class="text-lg font-bold text-gray-800">Freelance Graphic Designer</h4>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2023 - Present</span>
+                                </div>
+                                <p class="text-purple-600 font-semibold mb-3">Independent Contractor</p>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• Design various visual needs such as logos, posters, banners</li>
+                                    <li>• Create social media content using Canva and Adobe Photoshop</li>
+                                    <li>• Provide attractive designs according to client requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-green-600 rounded-full"></div>
+                            <div class="bg-white rounded-xl p-6 professional-shadow">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h4 class="text-lg font-bold text-gray-800">Freelance IT Support</h4>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2022 - Present</span>
+                                </div>
+                                <p class="text-green-600 font-semibold mb-3">Independent Contractor</p>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• Handle computer service and troubleshooting</li>
+                                    <li>• Perform installation and local network configuration</li>
+                                    <li>• Provide technical solutions for various IT problems</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l-2 border-blue-200">
+                            <div class="absolute -left-2 top-0 w-4 h-4 bg-orange-600 rounded-full"></div>
+                            <div class="bg-white rounded-xl p-6 professional-shadow">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h4 class="text-lg font-bold text-gray-800">Vocational School Intern</h4>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Feb - Apr 2024</span>
+                                </div>
+                                <p class="text-orange-600 font-semibold mb-3">SAE Digital Academy</p>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li>• Design promotional content needs on multiple platforms</li>
+                                    <li>• Work on various design projects for clients</li>
+                                    <li>• Learn professional workflow in the creative industry</li>
+                                    <li>• Develop digital design and visual communication skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education & Certifications -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 flex items-center">
+                        <i class="fas fa-graduation-cap text-purple-600 mr-3"></i>
+                        Education & Certifications
+                    </h3>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-white rounded-xl p-6 professional-shadow">
+                            <h4 class="text-lg font-bold text-gray-800 mb-2">Computer and Network Engineering</h4>
+                            <p class="text-blue-600 font-semibold mb-2">SMKS PAB 10 Patumbak</p>
+                            <p class="text-gray-500 mb-3">2022 - 2025 | Currently Enrolled</p>
+                            <p class="text-gray-600">Specialized in Computer Networks, System Administration, and IT Infrastructure</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <h4 class="text-lg font-bold text-gray-800">Achievements & Certifications</h4>
+                            
+                            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">🏆 4th Place Graphic Design</h5>
+                                        <p class="text-sm text-gray-600">High School Level PAB North Sumatra</p>
+                                    </div>
+                                    <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-4 border-l-4 border-blue-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">📜 Digital Career Webinar Certificate</h5>
+                                        <p class="text-sm text-gray-600">Career Opportunities in Digital World - Telkom Corporate University Center</p>
+                                    </div>
+                                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4 border-l-4 border-purple-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">🏆 5th Place Graphic Design</h5>
+                                        <p class="text-sm text-gray-600">High School Level PAB North Sumatra</p>
+                                    </div>
+                                    <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">2024</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-4 border-l-4 border-green-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">📋 School Internship Certificate</h5>
+                                        <p class="text-sm text-gray-600">Industrial Work Practice Program</p>
+                                    </div>
+                                    <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Feb-Apr 2024</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-lg p-4 border-l-4 border-red-500">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">🔒 Cyber Security Training Certificate</h5>
+                                        <p class="text-sm text-gray-600">Telkom North Sumatra - Network Security & Protection</p>
+                                    </div>
+                                    <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">Professional Services</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    Comprehensive creative and technical solutions tailored to meet your business objectives
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 professional-shadow card-hover fade-in">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6">
+                        <i class="fas fa-palette text-2xl md:text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">Graphic Design & Branding</h3>
+                    <p class="text-gray-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+                        Complete visual identity solutions from concept to execution, ensuring your brand stands out in the competitive market.
+                    </p>
+                    <div class="space-y-2 md:space-y-3 mb-6 md:mb-8">
+                        <div class="flex items-center text-gray-700 text-sm md:text-base">
+                            <i class="fas fa-check-circle text-blue-600 mr-2 md:mr-3 text-sm"></i>
+                            <span>Logo & Brand Identity Design</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 text-sm md:text-base">
+                            <i class="fas fa-check-circle text-blue-600 mr-2 md:mr-3 text-sm"></i>
+                            <span>Marketing Materials & Collaterals</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 text-sm md:text-base">
+                            <i class="fas fa-check-circle text-blue-600 mr-2 md:mr-3 text-sm"></i>
+                            <span>Social Media Graphics</span>
+                        </div>
+                        <div class="flex items-center text-gray-700 text-sm md:text-base">
+                            <i class="fas fa-check-circle text-blue-600 mr-2 md:mr-3 text-sm"></i>
+                            <span>Print & Digital Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 professional-shadow card-hover fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Photography & Videography</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        High-quality photography and videography services for commercial, corporate, and personal needs with professional post-processing.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span>Product & Commercial Photography</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span>Corporate Events & Video Documentation</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span>Professional Video Editing & Post-Production</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span>Digital Asset Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 professional-shadow card-hover fade-in">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">IT Support & Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Comprehensive technical support and IT consulting services to optimize your business operations and productivity.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                            <span>System Administration & Maintenance</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                            <span>Network Setup & Security</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                            <span>Hardware Troubleshooting</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                            <span>IT Strategy & Consulting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Featured Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Showcasing successful projects that demonstrate expertise, creativity, and measurable business impact
+                </p>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="flex justify-center mb-12 fade-in">
+                <div class="bg-gray-100 rounded-2xl p-2 overflow-x-auto w-full max-w-4xl">
+                    <div class="flex space-x-1 min-w-max justify-center">
+                        <button onclick="filterPortfolio('all')" class="filter-btn active bg-blue-600 text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all text-xs sm:text-sm md:text-base whitespace-nowrap">All Projects</button>
+                        <button onclick="filterPortfolio('design')" class="filter-btn text-gray-600 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all text-xs sm:text-sm md:text-base whitespace-nowrap">Design</button>
+                        <button onclick="filterPortfolio('photo')" class="filter-btn text-gray-600 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all text-xs sm:text-sm md:text-base whitespace-nowrap">Photography</button>
+                        <button onclick="filterPortfolio('it')" class="filter-btn text-gray-600 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all text-xs sm:text-sm md:text-base whitespace-nowrap">IT Solutions</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+                <!-- Design Projects -->
+                <div class="portfolio-item design card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-blue-400 to-purple-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">TechStart Brand Identity</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>March 2024
+                                </div>
+                                <button onclick="showProjectDetails('techstart')" class="text-blue-600 hover:text-blue-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item design card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-green-400 to-blue-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-bullhorn text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Restaurant Marketing Campaign</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>February 2024
+                                </div>
+                                <button onclick="showProjectDetails('restaurant')" class="text-green-600 hover:text-green-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item design card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-purple-400 to-pink-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">E-commerce App UI/UX</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>January 2024
+                                </div>
+                                <button onclick="showProjectDetails('ecommerce')" class="text-purple-600 hover:text-purple-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photography Projects -->
+                <div class="portfolio-item photo card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-yellow-400 to-orange-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-camera-retro text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Fashion Product Catalog</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>December 2023
+                                </div>
+                                <button onclick="showProjectDetails('fashion')" class="text-yellow-600 hover:text-yellow-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item photo card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-red-400 to-pink-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-users text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Corporate Annual Meeting</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>November 2023
+                                </div>
+                                <button onclick="showProjectDetails('corporate')" class="text-red-600 hover:text-red-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item photo card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-indigo-400 to-purple-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-portrait text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Executive Portrait Series</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>October 2023
+                                </div>
+                                <button onclick="showProjectDetails('portrait')" class="text-indigo-600 hover:text-indigo-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- IT Support Projects -->
+                <div class="portfolio-item it card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-cyan-400 to-blue-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-network-wired text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Enterprise Network Upgrade</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>September 2023
+                                </div>
+                                <button onclick="showProjectDetails('network')" class="text-cyan-600 hover:text-cyan-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item it card-hover fade-in">
+                    <div class="bg-white rounded-3xl overflow-hidden professional-shadow">
+                        <div class="bg-gradient-to-br from-teal-400 to-green-500 aspect-[4/3] flex items-center justify-center">
+                            <i class="fas fa-server text-3xl sm:text-4xl lg:text-5xl text-white"></i>
+                        </div>
+                        <div class="p-3 sm:p-6">
+                            <h3 class="text-sm sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">E-commerce Server Migration</h3>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                <div class="text-xs sm:text-sm text-gray-500">
+                                    <i class="fas fa-calendar mr-1"></i>
+                                    <span class="hidden sm:inline">Completed: </span>August 2023
+                                </div>
+                                <button onclick="showProjectDetails('server')" class="text-teal-600 hover:text-teal-700 font-semibold transition-colors text-xs sm:text-sm">
+                                    <span class="hidden sm:inline">View Details</span><span class="sm:hidden">Details</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 md:py-20 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 md:mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">Client Testimonials</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+                    What clients and colleagues say about working with me
+                </p>
+            </div>
+            
+            <!-- Testimonials Manual Scroll -->
+            <div class="relative">
+                <div class="testimonials-track flex gap-6 overflow-x-auto pb-4" style="scrollbar-width: thin; scrollbar-color: #cbd5e1 #f1f5f9;">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card bg-white rounded-lg p-6 professional-shadow w-80 sm:w-96 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">SM</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-sm">Sarah Martinez</h4>
+                                    <p class="text-gray-600 text-xs">CEO, TechStart Solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 italic text-sm leading-relaxed">
+                                "Alif's work on our brand identity was exceptional. His creative vision and technical expertise helped us achieve a 150% increase in brand recognition."
+                            </p>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-auto">
+                            <i class="fas fa-quote-right text-blue-300"></i>
+                            Project: Brand Identity Design
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">RK</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Robert Kim</h4>
+                                <p class="text-gray-600 text-sm">IT Director, Global Corp</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Outstanding IT support and network optimization. Alif reduced our system downtime by 90% and improved overall performance significantly. A true professional with deep technical knowledge."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-green-300"></i>
+                            Project: Network Infrastructure Upgrade
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">LW</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Lisa Wang</h4>
+                                <p class="text-gray-600 text-sm">Marketing Director, Fashion House</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Alif's photography work for our product catalog was phenomenal. The quality and attention to detail resulted in an 80% increase in online sales. We couldn't be happier with the results."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-purple-300"></i>
+                            Project: Product Photography Campaign
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">MJ</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Michael Johnson</h4>
+                                <p class="text-gray-600 text-sm">Founder, StartupHub</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Working with Alif was a game-changer for our startup. His comprehensive IT setup and brand design helped us launch successfully. Professional, creative, and incredibly reliable."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-orange-300"></i>
+                            Project: Complete Business Setup
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">AR</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Amanda Rodriguez</h4>
+                                <p class="text-gray-600 text-sm">Creative Director, Design Studio</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Alif's attention to detail and creative approach exceeded our expectations. His photography skills brought our vision to life perfectly. A true artist with technical excellence."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-indigo-300"></i>
+                            Project: Creative Campaign Photography
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">DL</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">David Lee</h4>
+                                <p class="text-gray-600 text-sm">Operations Manager, TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Our IT infrastructure transformation was seamless thanks to Alif. Zero downtime during migration and 300% performance improvement. Exceptional technical expertise and project management."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-pink-300"></i>
+                            Project: IT Infrastructure Overhaul
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">JC</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Jennifer Chen</h4>
+                                <p class="text-gray-600 text-sm">Brand Manager, Luxury Retail</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Alif transformed our brand identity completely. The new design increased customer engagement by 250% and perfectly captured our luxury positioning. Outstanding creative vision."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-cyan-300"></i>
+                            Project: Luxury Brand Redesign
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 8 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">TP</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Thomas Parker</h4>
+                                <p class="text-gray-600 text-sm">Event Coordinator, EventPro</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Alif's event photography captured every important moment perfectly. His professionalism and ability to work under pressure made our corporate event a huge success."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-emerald-300"></i>
+                            Project: Corporate Event Documentation
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 9 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">NK</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Nina Kumar</h4>
+                                <p class="text-gray-600 text-sm">Product Manager, InnovateTech</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "The product photography Alif delivered was absolutely stunning. Our e-commerce conversion rate increased by 120% after implementing his high-quality product images."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-violet-300"></i>
+                            Project: E-commerce Product Photography
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 10 -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">BW</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Brian Wilson</h4>
+                                <p class="text-gray-600 text-sm">CTO, DataFlow Systems</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Alif's comprehensive IT consulting and system optimization saved us thousands in operational costs. His strategic approach and technical expertise are unmatched."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-amber-300"></i>
+                            Project: IT Strategy & Optimization
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate testimonials for seamless loop -->
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white font-bold text-sm">SM</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-sm">Sarah Martinez</h4>
+                                    <p class="text-gray-600 text-xs">CEO, TechStart Solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex text-yellow-400 mb-3">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 italic text-sm leading-relaxed">
+                                "Alif's work on our brand identity was exceptional. His creative vision and technical expertise helped us achieve a 150% increase in brand recognition."
+                            </p>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-auto">
+                            <i class="fas fa-quote-right text-blue-300"></i>
+                            Project: Brand Identity Design
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card bg-white rounded-lg p-8 professional-shadow w-80 h-80 flex-shrink-0 flex flex-col justify-between">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-lg">RK</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Robert Kim</h4>
+                                <p class="text-gray-600 text-sm">IT Director, Global Corp</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic mb-4">
+                            "Outstanding IT support and network optimization. Alif reduced our system downtime by 90% and improved overall performance significantly. A true professional with deep technical knowledge."
+                        </p>
+                        <div class="text-sm text-gray-500">
+                            <i class="fas fa-quote-right text-green-300"></i>
+                            Project: Network Infrastructure Upgrade
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl sm:rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-4 sm:p-6 md:p-8">
+                <div class="flex justify-between items-start mb-4 sm:mb-6">
+                    <h2 id="modalTitle" class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 pr-4"></h2>
+                    <button onclick="closeProjectModal()" class="w-8 h-8 sm:w-10 sm:h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors flex-shrink-0">
+                        <i class="fas fa-times text-gray-600 text-sm sm:text-base"></i>
+                    </button>
+                </div>
+                
+                <div id="modalContent" class="space-y-4 sm:space-y-6">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Let's Work Together</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to bring your vision to life? Let's discuss how I can help achieve your business objectives.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Get In Touch</h3>
+                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                        I'm always interested in new opportunities and challenging projects. 
+                        Whether you need creative design, professional photography, or technical support, 
+                        I'm here to help you succeed.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 text-lg">Email</div>
+                                <div class="text-gray-600">alifadithia14@gmail.com</div>
+                                <div class="text-sm text-gray-500">Response within 24 hours</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-phone text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 text-lg">Phone</div>
+                                <div class="text-gray-600">+62 813-6166-8888</div>
+                                <div class="text-sm text-gray-500">Available Mon-Fri, 9AM-6PM</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fab fa-linkedin text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 text-lg">LinkedIn</div>
+                                <div class="text-gray-600">ALIF ADITHIA</div>
+                                <div class="text-sm text-gray-500">Professional networking</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 text-lg">WhatsApp</div>
+                                <div class="text-gray-600">085830051389</div>
+                                <div class="text-sm text-gray-500">Quick messaging & calls</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-map-marker-alt text-orange-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800 text-lg">Location</div>
+                                <div class="text-gray-600">Patumbak, Deli Serdang</div>
+                                <div class="text-sm text-gray-500">Available for remote work</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl">
+                        <h4 class="font-bold text-gray-800 mb-2">Quick Response Guarantee</h4>
+                        <p class="text-gray-600 text-sm">
+                            I understand the importance of timely communication in business. 
+                            All inquiries receive a response within 24 hours, often much sooner.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <form class="bg-gray-50 rounded-3xl p-6 sm:p-8 professional-shadow" onsubmit="handleSubmit(event)" id="contactForm">
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Full Name *</label>
+                                <input type="text" name="fullName" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" placeholder="Your full name" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Company</label>
+                                <input type="text" name="company" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" placeholder="Your company name">
+                            </div>
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Email Address *</label>
+                                <input type="email" name="email" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" placeholder="your@email.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Phone Number</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" placeholder="+62 xxx-xxxx-xxxx">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Service Needed *</label>
+                            <select name="service" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" required>
+                                <option value="">Select a service</option>
+                                <option value="Graphic Design & Branding">Graphic Design & Branding</option>
+                                <option value="Photography & Videography">Photography & Videography</option>
+                                <option value="IT Support & Consulting">IT Support & Consulting</option>
+                                <option value="Multiple Services">Multiple Services</option>
+                                <option value="Free Consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Project Budget</label>
+                            <select name="budget" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base">
+                                <option value="">Select budget range</option>
+                                <option value="Under $1,000">Under $1,000</option>
+                                <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                <option value="Over $10,000">Over $10,000</option>
+                                <option value="Let's discuss">Let's discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Project Details *</label>
+                            <textarea rows="4" name="projectDetails" class="w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm sm:text-base" placeholder="Please describe your project, timeline, and specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-bold text-base sm:text-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105">
+                            <span id="submitText">Send Message</span>
+                            <i id="submitIcon" class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                        
+                        <div class="mt-6 text-center">
+                            <p class="text-xs sm:text-sm text-gray-500">
+                                <i class="fas fa-shield-alt mr-1"></i>
+                                Your information is secure and will never be shared with third parties
+                            </p>
+                            <div id="formStatus" class="text-xs text-gray-400 mt-2">
+                                Messages are automatically saved to Google Sheets
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://alif-adithia.github.io/protofolio-alif.adithia/Logo_Alif.png" alt="Alif Adithia Logo" class="w-12 h-12 rounded-xl mr-4 object-cover">
+                        <div>
+                            <h3 class="text-2xl font-bold">Alif Adithia</h3>
+                            <p class="text-gray-400">Professional Portfolio</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                        Creative professional specializing in graphic design, photography, and IT support. 
+                        Committed to delivering exceptional results that drive business success.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:alifadithia14@gmail.com" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-colors" title="Email: alifadithia14@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/alif-adithia" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-colors" title="LinkedIn: ALIF ADITHIA">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/alif_adithia38" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-600 transition-colors" title="Instagram: @alif_adithia38">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6285830051389" class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-green-600 transition-colors" title="WhatsApp: 085830051389">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Graphic Design</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Brand Identity</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Photography & Videography</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">IT Support</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Me</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://drive.google.com/file/d/1csi5CGhLrvOcfpMgE8lLeOPKTTrIeTRn/view?usp=sharing" target="_blank" class="hover:text-white transition-colors">Download CV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        © 2024 Alif Adithia. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-6 text-sm text-gray-400">
+                        <span>Available for freelance work</span>
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Translation system removed - website now uses English only
+
+        // Mobile menu state
+        let isMenuOpen = false;
+        
+        // Theme state
+        let isDarkMode = false;
+        
+        // Theme toggle function
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const mobileThemeIcon = document.getElementById('mobile-theme-icon');
+            
+            isDarkMode = !isDarkMode;
+            
+            if (isDarkMode) {
+                html.classList.add('dark');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+                if (mobileThemeIcon) {
+                    mobileThemeIcon.classList.remove('fa-moon');
+                    mobileThemeIcon.classList.add('fa-sun');
+                }
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+                if (mobileThemeIcon) {
+                    mobileThemeIcon.classList.remove('fa-sun');
+                    mobileThemeIcon.classList.add('fa-moon');
+                }
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Initialize theme on page load
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const mobileThemeIcon = document.getElementById('mobile-theme-icon');
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                isDarkMode = true;
+                html.classList.add('dark');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+                if (mobileThemeIcon) {
+                    mobileThemeIcon.classList.remove('fa-moon');
+                    mobileThemeIcon.classList.add('fa-sun');
+                }
+            } else {
+                isDarkMode = false;
+                html.classList.remove('dark');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+                if (mobileThemeIcon) {
+                    mobileThemeIcon.classList.remove('fa-sun');
+                    mobileThemeIcon.classList.add('fa-moon');
+                }
+            }
+        }
+
+        // Mobile menu toggle function
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('mobile-menu-overlay');
+            const icon = document.getElementById('menu-icon');
+            const body = document.body;
+            
+            console.log('Toggle menu called, current state:', isMenuOpen);
+            
+            if (!menu || !overlay || !icon) {
+                console.log('Missing elements:', {menu: !!menu, overlay: !!overlay, icon: !!icon});
+                return;
+            }
+            
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                // Open menu
+                menu.classList.add('open');
+                overlay.classList.add('active');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times', 'rotate');
+                body.style.overflow = 'hidden';
+                console.log('Menu opened');
+            } else {
+                // Close menu
+                menu.classList.remove('open');
+                overlay.classList.remove('active');
+                icon.classList.remove('fa-times', 'rotate');
+                icon.classList.add('fa-bars');
+                body.style.overflow = 'auto';
+                console.log('Menu closed');
+            }
+        }
+
+        // Close menu function
+        function closeMenu() {
+            if (isMenuOpen) {
+                const menu = document.getElementById('mobile-menu');
+                const overlay = document.getElementById('mobile-menu-overlay');
+                const icon = document.getElementById('menu-icon');
+                const body = document.body;
+                
+                if (menu && overlay && icon) {
+                    isMenuOpen = false;
+                    menu.classList.remove('open');
+                    overlay.classList.remove('active');
+                    icon.classList.remove('fa-times', 'rotate');
+                    icon.classList.add('fa-bars');
+                    body.style.overflow = 'auto';
+                    console.log('Menu force closed');
+                }
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        function initializeNavigation() {
+            // Handle all navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    
+                    console.log('Navigation clicked:', targetId);
+                    
+                    if (target) {
+                        const headerHeight = 80;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        
+                        // Close mobile menu first if open
+                        if (isMenuOpen) {
+                            closeMenu();
+                            // Wait for menu animation to complete before scrolling
+                            setTimeout(() => {
+                                window.scrollTo({
+                                    top: targetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }, 300);
+                        } else {
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        }
+
+        // Add click handlers for mobile nav links
+        function initializeMobileNavLinks() {
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    console.log('Mobile nav link clicked:', this.getAttribute('href'));
+                    // Add visual feedback
+                    this.style.backgroundColor = '#dbeafe';
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                    }, 200);
+                });
+            });
+        }
+
+        // Portfolio filter functionality
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                btn.classList.add('text-gray-600');
+            });
+            event.target.classList.add('active', 'bg-blue-600', 'text-white');
+            event.target.classList.remove('text-gray-600');
+            
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Google Sheets integration
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbytwsPFqkZvHoRY0KouqMkrZtzlRqb3Gu5rJN9T9XpyKmagwQtIyOdYkgQYd80KEVCGuQ/exec';
+
+        // Form submission handler with Google Sheets integration
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const submitIcon = document.getElementById('submitIcon');
+            const formStatus = document.getElementById('formStatus');
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitText.textContent = 'Sending...';
+            submitIcon.className = 'fas fa-spinner fa-spin ml-2';
+            formStatus.textContent = 'Sending your message...';
+            formStatus.className = 'text-xs text-blue-600 mt-2';
+            
+            try {
+                // Collect form data
+                const formData = new FormData(form);
+                const data = {
+                    timestamp: new Date().toLocaleString('id-ID', {
+                        timeZone: 'Asia/Jakarta',
+                        year: 'numeric',
+                        month: '2-digit',
+                        day: '2-digit',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    }),
+                    fullName: formData.get('fullName'),
+                    company: formData.get('company') || 'Not specified',
+                    email: formData.get('email'),
+                    phone: formData.get('phone') || 'Not provided',
+                    service: formData.get('service'),
+                    budget: formData.get('budget') || 'Not specified',
+                    projectDetails: formData.get('projectDetails')
+                };
+                
+                // Send to Google Sheets
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                // Show success message
+                submitText.textContent = 'Message Sent!';
+                submitIcon.className = 'fas fa-check ml-2';
+                formStatus.textContent = 'Thank you! Your message has been sent successfully. I will respond within 24 hours.';
+                formStatus.className = 'text-xs text-green-600 mt-2';
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    form.reset();
+                    submitBtn.disabled = false;
+                    submitText.textContent = 'Send Message';
+                    submitIcon.className = 'fas fa-paper-plane ml-2';
+                    formStatus.textContent = 'Messages are automatically saved to Google Sheets';
+                    formStatus.className = 'text-xs text-gray-400 mt-2';
+                }, 3000);
+                
+            } catch (error) {
+                console.error('Error sending form:', error);
+                
+                // Show error message
+                submitText.textContent = 'Send Message';
+                submitIcon.className = 'fas fa-paper-plane ml-2';
+                submitBtn.disabled = false;
+                formStatus.textContent = 'Error sending message. Please try again or contact directly via email.';
+                formStatus.className = 'text-xs text-red-600 mt-2';
+                
+                // Reset error message after delay
+                setTimeout(() => {
+                    formStatus.textContent = 'Messages are automatically saved to Google Sheets';
+                    formStatus.className = 'text-xs text-gray-400 mt-2';
+                }, 5000);
+            }
+        }
+
+        // Alternative: Direct Google Forms integration (backup method)
+        function submitToGoogleForms(data) {
+            // Replace with your Google Form URL and field IDs
+            const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YourFormIdHere/formResponse';
+            
+            const formData = new FormData();
+            formData.append('entry.YourNameFieldId', data.fullName);
+            formData.append('entry.YourCompanyFieldId', data.company);
+            formData.append('entry.YourEmailFieldId', data.email);
+            formData.append('entry.YourPhoneFieldId', data.phone);
+            formData.append('entry.YourServiceFieldId', data.service);
+            formData.append('entry.YourBudgetFieldId', data.budget);
+            formData.append('entry.YourProjectDetailsFieldId', data.projectDetails);
+            
+            fetch(GOOGLE_FORM_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            });
+        }
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.achievement-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 16);
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger counter animation for stats section
+                    if (entry.target.querySelector('.achievement-counter')) {
+                        setTimeout(animateCounters, 500);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Skill bars animation
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach((bar, index) => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, index * 200 + 500);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.querySelector('#about');
+        if (skillsSection) {
+            skillObserver.observe(skillsSection);
+        }
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                link.classList.add('text-gray-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-600');
+                    link.classList.add('text-blue-600');
+                }
+            });
+        });
+
+        // Testimonials now use manual scroll - no carousel controls needed
+
+        // Project details data
+        const projectDetails = {
+            techstart: {
+                title: "TechStart Brand Identity",
+                date: "March 2024",
+                client: "TechStart Solutions",
+                duration: "6 weeks",
+                role: "Brand Designer",
+                description: "Complete brand identity redesign for a technology startup, creating a modern and professional visual identity that conveys innovation and trustworthiness. The project included logo design, color palette development, typography selection, and comprehensive brand guidelines to establish credibility in the competitive tech startup space.",
+                serviceType: "graphic design",
+                images: [
+                    "Logo design variations and applications",
+                    "Brand guidelines and color palette",
+                    "Business card and stationery design",
+                    "Website mockups and digital applications"
+                ]
+            },
+            restaurant: {
+                title: "Restaurant Marketing Campaign",
+                date: "February 2024",
+                client: "Bella Vista Restaurant",
+                duration: "4 weeks",
+                role: "Marketing Designer",
+                description: "Comprehensive marketing campaign design for a local restaurant to increase foot traffic and online orders during the post-pandemic recovery period. Created engaging social media graphics, redesigned menu layouts, promotional materials, and digital advertising assets that resulted in significant business growth.",
+                serviceType: "graphic design",
+                images: [
+                    "Social media campaign graphics",
+                    "Menu redesign and layout",
+                    "Promotional flyers and posters",
+                    "Digital advertising banners"
+                ]
+            },
+            ecommerce: {
+                title: "E-commerce App UI/UX",
+                date: "January 2024",
+                client: "ShopEasy Mobile App",
+                duration: "8 weeks",
+                role: "UI/UX Designer",
+                description: "Mobile app interface design for an e-commerce startup focusing on user-centered design principles. Created intuitive navigation, streamlined checkout process, and engaging product discovery features to compete with established players and significantly improve user conversion rates.",
+                serviceType: "graphic design",
+                images: [
+                    "User journey mapping and wireframes",
+                    "High-fidelity mobile app screens",
+                    "Interactive prototypes",
+                    "User testing results and iterations"
+                ]
+            },
+            fashion: {
+                title: "Fashion Product Catalog",
+                date: "December 2023",
+                client: "Luxe Fashion House",
+                duration: "3 weeks",
+                role: "Product Photographer",
+                description: "High-end product photography for a luxury fashion brand's premium collection. Executed professional photography sessions with meticulous attention to lighting, styling, and post-processing to highlight product quality and craftsmanship, resulting in significant increase in online sales and brand recognition.",
+                serviceType: "product photography",
+                images: [
+                    "Studio setup and lighting arrangements",
+                    "Before and after editing examples",
+                    "Final product catalog images",
+                    "Behind-the-scenes photography process"
+                ]
+            },
+            corporate: {
+                title: "Corporate Annual Meeting",
+                date: "November 2023",
+                client: "Global Tech Corporation",
+                duration: "2 days",
+                role: "Event Photographer",
+                description: "Comprehensive documentation of a major corporate event with 500+ attendees. Captured key moments, presentations, networking activities, and award ceremonies using professional equipment and techniques. Delivered high-quality edited photos within 48 hours for immediate use in corporate communications.",
+                serviceType: "event photography",
+                images: [
+                    "Keynote presentation coverage",
+                    "Executive portraits and headshots",
+                    "Networking and candid moments",
+                    "Award ceremony documentation"
+                ]
+            },
+            portrait: {
+                title: "Executive Portrait Series",
+                date: "October 2023",
+                client: "Fortune 500 Company",
+                duration: "1 week",
+                role: "Portrait Photographer",
+                description: "Professional headshot photography for C-level executives to enhance their personal branding and corporate image. Conducted individual portrait sessions with careful attention to lighting, posing, and post-processing to create consistent, high-quality executive portraits for use across all professional platforms.",
+                serviceType: "portrait photography",
+                images: [
+                    "Studio lighting setup examples",
+                    "Executive portrait samples",
+                    "Before and after retouching",
+                    "Various pose and lighting variations"
+                ]
+            },
+            network: {
+                title: "Enterprise Network Upgrade",
+                date: "September 2023",
+                client: "Manufacturing Company",
+                duration: "4 weeks",
+                role: "Network Engineer",
+                description: "Complete network infrastructure upgrade for a 100+ employee manufacturing facility. Designed and implemented comprehensive network improvements including new hardware, enhanced security protocols, and monitoring systems with minimal downtime to improve performance, security, and reliability for business operations.",
+                serviceType: "IT support",
+                images: [
+                    "Network topology diagrams",
+                    "Server room before and after",
+                    "Performance monitoring dashboards",
+                    "Security implementation documentation"
+                ]
+            },
+            server: {
+                title: "E-commerce Server Migration",
+                date: "August 2023",
+                client: "Online Retail Platform",
+                duration: "2 weeks",
+                role: "Systems Administrator",
+                description: "Seamless migration of high-traffic e-commerce platform to new server infrastructure with zero downtime. Utilized load balancing, database replication, and strategic timing to ensure continuous service availability while significantly improving performance and reducing operational costs.",
+                serviceType: "IT support",
+                images: [
+                    "Migration timeline and planning",
+                    "Performance metrics before/after",
+                    "Server architecture diagrams",
+                    "Cost analysis and savings report"
+                ]
+            }
+        };
+
+        // Show project details modal
+        function showProjectDetails(projectId) {
+            const project = projectDetails[projectId];
+            if (!project) return;
+
+            document.getElementById('modalTitle').textContent = project.title;
+            
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="mb-6">
+                    <div class="text-sm text-gray-500 mb-2">${project.date}</div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gray-50 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Client</h4>
+                        <p class="text-gray-600">${project.client}</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Duration</h4>
+                        <p class="text-gray-600">${project.duration}</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-800 mb-2">Role</h4>
+                        <p class="text-gray-600">${project.role}</p>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Project Description</h3>
+                    <p class="text-gray-600 leading-relaxed">${project.description}</p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Project Gallery</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        ${project.images.map((image, index) => `
+                            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-8 flex items-center justify-center" style="width: 400px; height: 300px;">
+                                <div class="text-center">
+                                    <i class="fas fa-image text-4xl text-gray-400 mb-3"></i>
+                                    <p class="text-gray-600 text-sm">${image}</p>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6">
+                    <h4 class="font-bold text-gray-800 mb-2">Interested in Similar Work?</h4>
+                    <p class="text-gray-600 mb-4">I'd love to discuss how I can help with your ${project.serviceType} needs.</p>
+                    <a href="#contact" onclick="closeProjectModal()" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Get In Touch <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            `;
+
+            document.getElementById('projectModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close project details modal
+        function closeProjectModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeProjectModal();
+            }
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Close menu with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && isMenuOpen) {
+                closeMenu();
+            }
+        });
+
+        // Close menu when clicking outside (for desktop)
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('mobile-menu');
+            const menuToggle = document.getElementById('menu-toggle');
+            
+            if (isMenuOpen && !menu.contains(e.target) && !menuToggle.contains(e.target)) {
+                closeMenu();
+            }
+        });
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing...');
+            
+            // Initialize theme first
+            initializeTheme();
+            
+            // Initialize navigation
+            initializeNavigation();
+            initializeMobileNavLinks();
+            
+            // Initialize mobile menu state
+            const menu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('mobile-menu-overlay');
+            const icon = document.getElementById('menu-icon');
+            const menuToggle = document.getElementById('menu-toggle');
+            
+            console.log('Menu elements found:', {
+                menu: !!menu, 
+                overlay: !!overlay, 
+                icon: !!icon, 
+                menuToggle: !!menuToggle
+            });
+            
+            if (menu && overlay && icon) {
+                // Reset menu state
+                menu.classList.remove('open');
+                overlay.classList.remove('active');
+                icon.classList.remove('fa-times', 'rotate');
+                icon.classList.add('fa-bars');
+                isMenuOpen = false;
+                document.body.style.overflow = 'auto';
+                console.log('Menu state reset');
+            }
+
+            // Add menu toggle event listeners
+            if (menuToggle) {
+                // Clear any existing listeners
+                menuToggle.onclick = null;
+                
+                // Add click listener
+                menuToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Menu toggle clicked');
+                    toggleMenu();
+                });
+                
+                // Add touch listener for mobile
+                menuToggle.addEventListener('touchstart', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Menu toggle touched');
+                    toggleMenu();
+                }, {passive: false});
+                
+                console.log('Menu toggle listeners added');
+            }
+            
+            // Ensure all clickable elements work on mobile
+            const clickableElements = document.querySelectorAll('button, a, [onclick]');
+            clickableElements.forEach(element => {
+                element.style.cursor = 'pointer';
+                element.addEventListener('touchstart', function() {}, {passive: true});
+            });
+
+            // Fix viewport for mobile
+            const viewport = document.querySelector('meta[name=viewport]');
+            if (viewport) {
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, user-scalable=no');
+            }
+            
+            console.log('Initialization complete');
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96a82ca213f68354',t:'MTc1NDQxNjYyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
